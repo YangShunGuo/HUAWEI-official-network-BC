@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>运营商用户</title>
+    <link rel="stylesheet" href="css/yunyingshang-css/bootstrap.css" type="text/css">
+    <style type="text/css" >
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-size:12px;
+            color: #333;
+        }
+        nav{
+            margin-bottom:0px;
+        }
+        h2{
+            margin-top:30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h4{
+            text-align: center;
+            margin-bottom:10px;
+        }
+        a:hover{
+            text-decoration: none;;
+        }
+        .float_left{
+            float: left;
+        }
+        .float_right{
+            float: right;
+        }
+        .f16{
+            font-size: 16px !important;
+        }
+        .head{
+            position: relative;
+            display: block;
+            background-color: #222222;
+            height:28px;
+            line-height:28px;
+            z-index: 99;
+        }
+       .head a{
+           text-decoration: none;
+           color: #fff;
+           line-height:28px;
+           margin:0 6px;
+           cursor: pointer;
+       }
+       .hide1{
+           background-color:white ;
+           height:130px;
+           display: none;
+       }
+       .hide1 ul{
+           padding: 35px 0;
+           font-size:14px;
+       }
+       .hide1 li{
+           list-style: none;
+           float: left;
+           margin-right:60px;
+       }
+       .hide1 a{
+           display: block;
+           color: #f66f6a;
+       }
+        .navbar-container{
+            padding-top:18px;
+            display: block;
+            background-color: #fff;
+            box-shadow: 0 0px 8px rgba(0,0,0,0.1);
+            z-index:50;
+            height:70px;
+        }
+        .navbar-nav a{
+            color: #323232 !important;
+            font-size:16px;
+            padding-top:8px !important;
+        }
+        .navbar-list span{
+            color: #bfbfbf;
+            font-size: 24px;
+            padding-top:8px !important;
+            cursor: pointer;
+        }
+        .navbar-list span:hover{
+            color: #e22835;
+        }
+        .navbar-nav a:hover{
+            color: #e22835 !important;
+            border-bottom: solid 2px #e22835;
+        }
+        .navbar-brand{
+            padding:0px;
+            margin-right:20px;
+        }
+        .navbar-list{
+            background: #fff;
+        }
+        .search{
+            top: 38px;
+            right:0px;
+            position: absolute;
+            width:350px;
+            height:78px;
+            background-color: #fff;
+            border:solid 1px #cecece;
+            display: none;
+        }
+        .show2:hover > .search{
+            display: block;
+        }
+        .jm{
+            background-image: url("image/yunyingshang-image/big_banner.jpg");
+            height:533px;
+            margin-top:68px;
+            background-color: rgb(35,82,120);
+            background-position: center center;
+        }
+        .item_inner{
+            max-width:1160px;
+            margin:0 auto;
+            padding-top:150px;
+            padding-left:80px;
+        }
+        .btn-danger{
+            background-color: #b02d2e;
+        }
+        .btn-danger:hover{
+            text-decoration: underline;
+        }
+        .highlight h2{
+            margin:30px auto;
+            text-align: center;
+        }
+        .shadow{
+            background: rgba(0,0,0,0);
+            width:100%;
+            height:100%;
+            position: absolute;
+            top:0;
+            left: 0;
+            -webkit-transition: background 1s;
+            -moz-transition: background 1s;
+            -ms-transition: background 1s;
+            -o-transition: background 1s;
+            transition: background 1s;
+        }
+        .sh:hover .shadow{
+            background: rgba(0,0,0,0.7);
+        }
+        .highlight_info{
+            position: absolute;
+            top:0;
+            padding-left:20px;
+            padding-top: 20px;
+        }
+        .icon_box{
+            border:solid 1px #fff;
+            color: #fff;
+            width:75px;
+        }
+        .highlight_info p{
+            font-size: 18px;
+            color: #fff;
+            padding-top: 65px;
+            padding-bottom: 42px;
+        }
+        .highlight_info button{
+            margin-left:90px;
+        }
+        #myCarousel{
+            height: 228px;
+        }
+        .highlight_mobile li{
+            background-color: #868686;
+            border:1px solid #868686;
+        }
+        .pic_small{
+            position: relative;
+        }
+        .p1{
+            position: relative;
+            margin-bottom:15px;
+        }
+        .p1 img{
+            position: relative;
+            width: 100%;
+            max-height:230px;
+            overflow: hidden;
+        }
+        .p1 img:hover{
+            cursor: pointer;
+            transform: scale(1.2,1.2);
+            -webkit-transition: transform 0.5s;
+            -moz-transition: transform 0.5s;
+            -ms-transition: transform 0.5s;
+            -o-transition: transform 0.5s;
+            transition: transform 0.5s;
+        }
+        .pic_info{
+            position: absolute;
+            width:40%;
+            height:60%;
+            top:17%;
+            left:27%;
+            margin:30px auto;
+            font-size:18px;
+            color: #fff;
+            text-align: center;
+        }
+        .pic_info img{
+            width:40%;
+            height:40%;
+            margin-bottom: 10px;
+        }
+        .float_image{
+            position: absolute;
+            left:15px;
+            top:-0px;
+            display: none;
+        }
+        .pic_info:hover .float_image{
+            display:block;
+        }
+        .bg{
+            position: relative;
+            background-color: #fff;
+            height:100%;
+        }
+        .bg img{
+            border:none;
+            background-color: rgba(0,0,0,0);
+            width:35%;
+            height:35%;
+            margin-left:33%;
+            margin-top:20%;
+            margin-bottom:8%;
+        }
+        .bg p{
+            display:block;
+            text-align: center;
+            font-size:16px;
+            color: #000;
+            margin-bottom:22%;
+        }
+        .bg:hover{
+            background-color:#F66F6A;
+            -webkit-transition: background-color 0.4s;
+            -moz-transition: background-color 0.4s;
+            -ms-transition: background-color 0.4s;
+            -o-transition: background-color 0.4s;
+            transition: background-color 0.4s;
+        }
+        .bg2:hover{
+            background: #337ab7;
+        }
+        .bg3:hover{
+            background: #84d0a2;
+        }
+        .bg4:hover{
+            background: #f66f6a;
+        }
+        .bg:hover p{
+            color: #fff;
+        }
+        .bg:hover a{
+            text-decoration: none;
+        }
+        .imgDown{
+            display: none;
+        }
+        .bg:hover .imgDown{
+            display: inline;
+        }
+        .bg:hover .imgUp{
+            display: none;
+        }
+        .news li{
+            list-style: none;
+            padding: 10px 0;
+        }
+        .news a{
+            display: block;
+            color: #000;
+            font-size:16px;
+            line-height: 24px;
+        }
+        .news a:hover{
+            color: #0066cc;
+        }
+        .exhibition a{
+            display: block;
+            color: #000;
+            font-size:18px;
+            margin:10px 0;
+        }
+        .exhibition a:hover{
+            color: #0066cc;
+        }
+        .exhibition p{
+            font-size:15px;
+            line-height:24px;
+        }
+        .exhibition_img:hover img{
+            transform: scale(1.2,1.2);
+            -webkit-transition: transform 0.5s;
+            -moz-transition: transform 0.5s;
+            -ms-transition: transform 0.5s;
+            -o-transition: transform 0.5s;
+            transition: transform 0.5s;
+        }
+        .foot:hover a{
+            text-decoration: none;
+        }
+        .foot_info{
+            padding-top:40px;
+        }
+        .foot_info label{
+            font-size:18px;
+            color: #fff;
+        }
+        .foot_info li{
+            list-style: none;
+        }
+        .foot_info li a{
+            display: block;
+            font-size:16px;
+            color: #fff;
+            margin:8px 0;
+        }
+        .small_foot_info{
+            color: #fff;
+            font-size:16px;
+        }
+        .small_foot_info label{
+            display: block;
+            padding:8px 0;
+            border-bottom: solid 1px #535353;
+        }
+        .small_foot_info li{
+            list-style:none;
+        }
+        .small_foot_info a{
+            color: #fff;
+            line-height: 36px;
+        }
+        .subscribe{
+            margin-top: 40px;
+            color: #fff;
+            font-size:16px;
+            margin-bottom:20px;
+        }
+        .subscribe_icon li{
+            display:block;
+            width:32px;
+            height:32px;
+            margin-right:10px;
+            float: left;
+        }
+        .bottom{
+            color: #fff;
+            font-size:14px;
+            margin:20px 0;
+        }
+        .bottom a{
+            color: #fff;
+        }
+        .hide2{
+            position: absolute;
+            width:1920px;
+            background-color: white;
+            top: 49px;
+            left:-425px;
+            display: none;
+            border:1px solid #cbcbcb;
+        }
+        .hide2 li a {
+            display: block;
+            color: #333;
+            border-bottom: solid 1px #cbcbcb;
+            padding-right: 50px;
+            margin: 10px 0;
+            margin-left: 100px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!--头部-->
+    <div class="navbar-fixed-top">
+        <div class="head hidden-sm hidden-xs">
+            <div class="container" style="padding: 0;">
+                <div  class="show1" id="show1" onclick="showFunction()">
+                    <a class="float_left nav">运营商业务网站
+                        <i class="glyphicon glyphicon-menu-down"></i>
+                    </a>
+                </div>
+                <div class="float_right">
+                    <span><a href="#"><i class="glyphicon glyphicon-globe"></i>  选择区域/语言</a></span>
+                    <a>|</a>
+                    <span><a href="#"><i class="glyphicon glyphicon-lock"></i>  登录</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hide1" id="hide1">
+            <div class="container">
+                <ul>
+                    <li><p>运营商网络<br>运营商网络解决方案、产品及服务</p></li>
+                    <li><a href="#">集团网站</a><span>公司信息，社会责任，新闻，展会活<br>动，行业洞察等</span></li>
+                    <li><a href="#">个人用户</a><span>手机，PC和平板，穿戴设备等个人及<br>家用产品</span></li>
+                    <li><a href="#">企业用户</a><span>企业商用产品、解决方法和云服务</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--导航条部分-->
+        <nav class="navbar navbar-default navbar-container" style="border-radius: 0">
+            <div class="container" style="padding-right: 0;">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand"><img src="image/yunyingshang-image/huawei_logo.png"></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-list" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">行业洞察</a></li>
+                        <li><a href="#">行业热点</a>
+                            <div class="hide2">
+                                <div class="container row">
+                                    <div class="float_left">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">5G已来</a></li>
+                                            <li><a href="#">IoT使能运营商向服务转型</a></li>
+                                            <li><a href="#">视频驱动运营商新增长</a></li>
+                                            <li><a href="#">全云化网络支持5G发展</a></li>
+                                            <li><a href="#">云网协同使能B2B</a></li>
+                                            <li><a href="#">品质家宽使能商业成功</a></li>
+                                            <li><a href="#">激发B2C新增长</a></li>
+                                            <li><a href="#">数字化运营运维</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="float_left">
+                                        <img src="image/yunyingshang-image/111.jpg"></img><br>
+                                        <a href="#" style="text-align: center;display: block">5G已来</a><br>
+                                        <span>5G 肩负着移动通信从2020年开始下一个10年发展的历史使命。越来越多的运营商正在为5G商用做好准备，构建2020年实现5G全面商用的目标的能力。</span>
+                                    </div>
+                                    <div class="float_left">
+                                        <img src="image/yunyingshang-image/222.jpg"></img>
+                                        <a href="#">IoT使能运营商向服务转型</a>
+                                        <span>物联网本质上是借助ICT技术对传统产业进行重构，通过物理世界和数字世界的融合，缩短业务流程、提升生产效率，为客户提供更好的产品和服务，释放出产业创新的巨大潜能。</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">解决方案 & 产品 & 服务</a></li>
+                        <li><a href="#">技术支持</a></li>
+                    </ul>
+                    <span class="glyphicon glyphicon-search float_right show2" style="position: relative;">
+                        <div class="search form-group">
+                            <form class="form-inline" role="form" style="padding: 20px 10px">
+                            <input type="text" class="form-control float_left" style="width: 280px;height: 34px;border-radius: 0">
+                            <btn type="submit" class="btn btn-default float_left" style="border-radius: 0"><i class="glyphicon glyphicon-search"></i></btn>
+                            </form>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <!--巨幕-->
+    <div class="carousel jm">
+        <div class="item_inner">
+            <img src="image/yunyingshang-image/char.png">
+            <br><br>
+            <button class="btn btn-danger btn-lg">了解更多</button>
+        </div>
+    </div>
+
+    <!--亮点关注-->
+    <div class="container">
+        <div class="highlight">
+            <h2>亮点关注</h2>
+            <div class="row hidden-xs highlight_pic ">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-12 col-md-12 col-sm-12 sh">
+                        <div class="row">
+                            <img src="image/yunyingshang-image/highlight01.jpg" width="100%" height="270">
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="highlight_info">
+                            <div class="icon_box">
+                                <img src="image/yunyingshang-image/icon.png"><span> 现场速递</span>
+                            </div>
+                            <p>华为轮值董事长徐直军：让5G把MBB推向新高度</p>
+                            <button class="btn btn-danger">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-12 col-md-12 col-sm-12 sh">
+                        <div class="row">
+                            <img src="image/yunyingshang-image/highlight02.jpg" width="100%" height="270">
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="highlight_info">
+                            <div class="icon_box">
+                                <img src="image/yunyingshang-image/icon.png"><span> 现场速递</span>
+                            </div>
+                            <p>华为以"迈向万物互联的智能世界"亮相2018世界移动大会 上海</p>
+                            <button class="btn btn-danger">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-12 col-md-12 col-sm-12 sh">
+                        <div class="row">
+                            <img src="image/yunyingshang-image/highlight03.jpg" width="100%" height="270">
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="highlight_info">
+                            <div class="icon_box">
+                                <img src="image/yunyingshang-image/icon.png"><span> 现场速递</span>
+                            </div>
+                            <p>华为和中国电信携手再获GSMA颁发的"最佳物联网移动创新奖"</p>
+                            <button class="btn btn-danger">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--移动端-->
+            <div class="visible-xs highlight_mobile">
+                <div id="myCarousel" class="carousel float_left slide">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <a href="#"><img src="image/yunyingshang-image/highlight04.jpg"></a>
+                            <div class="highlight_info">
+                                <div class="icon_box">
+                                    <img src="image/yunyingshang-image/icon.png"><span> 现场速递</span>
+                                </div>
+                                <p class="f16">华为轮值董事长徐直军：让5G把MBB推向新高度</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="image/yunyingshang-image/highlight05.jpg"></a>
+                            <div class="highlight_info">
+                                <div class="icon_box">
+                                    <img src="image/yunyingshang-image/icon.png"><span> 现场速递</span>
+                                </div>
+                                <p class="f16">华为以"迈向万物互联的智能世界"亮相2018世界移动大会 上海</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="image/yunyingshang-image/highlight06.jpg"></a>
+                            <div class="highlight_info">
+                                <div class="icon_box">
+                                    <img src="image/yunyingshang-image/icon.png"><span> 现场速递</span>
+                                </div>
+                                <p class="f16">华为和中国电信携手再获GSMA颁发的"最佳物联网移动创新奖"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--迈向万物互联的智能世界-->
+    <div style="background-color:#f2f2f2; margin-top:20px; padding-bottom: 20px;">
+        <div class="container ">
+            <div class="pic_set">
+                <h2>迈向万物互联的智能世界</h2>
+                <h4>把数字世界带入每个人、每个家庭、每个组织，构建万物互联的智能世界</h4>
+                <div class="row pic_small">
+                    <div class="col-sm-4 col-xs-6 show">
+                        <div class="p1">
+                            <img src="image/yunyingshang-image/picSet01.png">
+                            <div class="pic_info">
+                                <img src="image/yunyingshang-image/01-icon.png">
+                                <p>5G已来</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <div class="p1">
+                            <img src="image/yunyingshang-image/picSet02.png">
+                            <div class="pic_info">
+                                <img src="image/yunyingshang-image/02-icon.png">
+                                <p>IoT使能运营商向服务转型</p></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <div class="p1">
+                            <img src="image/yunyingshang-image/picSet03.png">
+                            <div class="pic_info">
+                                <img src="image/yunyingshang-image/03-icon.png">
+                                <p>视频驱动运营商新增长</p></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <div class="p1">
+                            <img src="image/yunyingshang-image/picSet04.png">
+                            <div class="pic_info">
+                                <img src="image/yunyingshang-image/04-icon.png">
+                                <p>全云化网络支持5G发展</p></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <div class="p1">
+                            <img src="image/yunyingshang-image/picSet05.png">
+                            <div class="pic_info">
+                                <img src="image/yunyingshang-image/05-icon.png">
+                                <p>云网协同使能B2B</p></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <div class="p1">
+                            <img src="image/yunyingshang-image/picSet06.png">
+                            <div class="pic_info">
+                                <img src="image/yunyingshang-image/06-icon.png">
+                                <p>品质家宽使能商业成功</p></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <div class="p1">
+                            <img src="image/yunyingshang-image/picSet07.png">
+                            <div class="pic_info">
+                                <img src="image/yunyingshang-image/07-icon.png">
+                                <p>激发B2C新增长</p></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <div class="p1">
+                            <img src="image/yunyingshang-image/picSet08.png">
+                            <div class="pic_info">
+                                <img src="image/yunyingshang-image/08-icon.png">
+                                <p>数字化运营运维</p></div>
+                        </div>
+                    </div>
+                    <img src="image/yunyingshang-image/picSet01.jpg" width="360px" height="486px" class="float_image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--如何开始-->
+    <div class="container">
+        <h2>如何开始</h2>
+        <h4>面向未来，加速数字化转型；立足现在，最大化网络价值</h4>
+        <div class="col-xs-3" style="padding: 0;">
+            <a href="#">
+                <div class="bg">
+                    <div>
+                        <img src="image/yunyingshang-image/icon-business.png" class="imgUp">
+                        <img src="image/yunyingshang-image/icon-business-hover.png" class="imgDown">
+                        <p>业务云化</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-3" style="padding: 0;">
+            <a href="#">
+                <div class="bg bg2">
+                    <div>
+                        <img src="image/yunyingshang-image/icon-operate.png" class="imgUp">
+                        <img src="image/yunyingshang-image/icon-operate-hover.png" class="imgDown">
+                        <p>设备云化</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-3" style="padding: 0;">
+            <a href="#">
+                <div class="bg bg3">
+                    <div>
+                        <img src="image/yunyingshang-image/icon-net.png" class="imgUp">
+                        <img src="image/yunyingshang-image/icon-net-hover.png" class="imgDown">
+                        <p>网络云化</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-3" style="padding: 0;">
+            <a href="#">
+                <div class="bg bg4">
+                    <div>
+                        <img src="image/yunyingshang-image/icon-price.png" class="imgUp">
+                        <img src="image/yunyingshang-image/icon-price-hover.png" class="imgDown">
+                        <p>最大化网络价值</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!--新闻-->
+    <div style="margin-top: 20px;background-color: #f5f5f5">
+        <div class="container">
+            <div class="col-sm-4">
+                <h3 style="text-align: left">新闻</h3>
+                <ul class="news">
+                    <li>
+                        <a href="#">中国移动、英特尔和华为率先完成基于R15的5G互操作测试</a>
+                        <span class="text-muted">2018-07-10</span>
+                    </li>
+                    <li>
+                        <a href="#">丹麦和记携手华为部署4T6S解决方案 成功保障罗斯基勒音乐节</a>
+                        <span class="text-muted">2018-07-10</span>
+                    </li>
+                    <li>
+                        <a href="#">中国移动子网CMpak携手华为建设巴基斯坦首个SingleRAN Pro网络</a>
+                        <span class="text-muted">2018-07-10</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-8 exhibition">
+                <h3 style="text-align: left; margin-left:10px;">展会活动</h3>
+                <div class="col-sm-6 exhibition_img">
+                    <div style="overflow: hidden;">
+                        <img src="image/yunyingshang-image/1111.jpg" width="100%">
+                    </div>
+                    <a href="#">2018年世界移动大会 · 上海</a>
+                    <p>迈向万物互联的智能世界<br>中国，上海  6月27日-29日</p>
+                </div>
+                <div class="col-sm-6 exhibition_img">
+                    <div style="overflow: hidden;;">
+                        <img src="image/yunyingshang-image/2222.jpg" width="100%">
+                    </div>
+                    <a href="#">2018华为全球分析师大会</a>
+                    <p>构建万物互联的智能世界<br>中国，深圳  4月17日-19日</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--脚部-->
+    <div class="foot" style="background-color: #272727">
+        <div class="container">
+            <div class="row">
+                <!--xs消失-->
+                <div class="col-md-8 col-sm-12 hidden-xs">
+                    <div class="row foot_info">
+                        <div class="col-sm-3">
+                            <label>按访问者</label>
+                            <ul>
+                                <li><a href="#">个人用户</a></li>
+                                <li><a href="#">企业用户</a></li>
+                                <li><a href="#">媒体</a></li>
+                                <li><a href="#">合作伙伴</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <label>关于华为</label>
+                            <ul>
+                                <li><a href="#">公司简介</a></li>
+                                <li><a href="#">展会活动</a></li>
+                                <li><a href="#">新闻</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <label>公告</label>
+                            <ul>
+                                <li><a href="#">网络安全声明</a></li>
+                                <li><a href="#">安全通告</a></li>
+                                <li><a href="#">产品生命周期公告</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <label>相关链接</label>
+                            <ul>
+                                <li><a href="#">华为集团</a></li>
+                                <li><a href="#">消费者业务</a></li>
+                                <li><a href="#">企业业务</a></li>
+                                <li><a href="#">华为海洋</a></li>
+                                <li><a href="#">产品定义社区</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--xs出现-->
+                <div class="col-xs-12 visible-xs">
+                    <div class="left small_foot_info">
+                        <label style="margin:20px 15px;"> 首页</label>
+                        <div class="col-sm-3">
+                            <label>关于华为</label>
+                            <ul>
+                                <li><a href="#">公司简介</a></li>
+                                <li><a href="#">展会活动</a></li>
+                                <li><a href="#">新闻</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <label>公告</label>
+                            <ul>
+                                <li><a href="#">网络安全声明</a></li>
+                                <li><a href="#">产品生命周期公告</a></li>
+                                <li><a href="#">安全通告</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <label>相关链接</label>
+                            <ul>
+                                <li><a href="#">消费者业务</a></li>
+                                <li><a href="#">华为集团</a></li>
+                                <li><a href="#">企业业务</a></li>
+                                <li><a href="#">华为海洋</a></li>
+                                <li><a href="#">华为商城</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                        <label>按访问者</label>
+                        <ul>
+                            <li><a href="#">企业用户</a></li>
+                            <li><a href="#">新闻媒体</a></li>
+                            <li><a href="#">合作伙伴</a></li>
+                            <li><a href="#">个人用户</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!--关注我们链接-->
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="subscribe">关注我们</div>
+                    <ul class="subscribe_icon clearfix">
+                        <li><a href="#"><img src="image/yunyingshang-image/logo_linkedin.png" width="100%" height="100%"></a></li>
+                        <li><a href="#"><img src="image/yunyingshang-image/logo_facebook.png" width="100%" height="100%"></a></li>
+                        <li><a href="#"><img src="image/yunyingshang-image/logo_twitter.png" width="100%" height="100%"></a></li>
+                        <li><a href="#"><img src="image/yunyingshang-image/logo_youtube.png" width="100%" height="100%"></a></li>
+                    </ul>
+                    <div class="hidden-sm hidden-xs"><img src="image/yunyingshang-image/qrcode-huawei-CNBG-81x81px.jpg"></div>
+                    <div style="color: #fff; font-size: 14px;line-height: 30px;padding-top: 10px;" class="hidden-sm hidden-xs">
+                        运营商业务<br>官方微信
+                    </div>
+                </div>
+                <!--法律声明-->
+                <div>
+                    <div class="row">
+                        <div class="col-sm-7 col-md-8 hidden-xs hidden-sm bottom">
+                            <div class="bottom-left">
+                                <span>©2018 华为技术有限公司    粤A2-20044005号</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-md-4 bottom">
+                            <div class="bottom-right">
+                                <a href="#">法律声明</a>
+                                <a>|</a>
+                                <a href="#">隐私保护</a>
+                                <a>|</a>
+                                <a href="#">联系我们</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        function showFunction() {
+            var e = document.getElementById("hide1");
+            if(e.style.display=='block'){
+                document.getElementById("hide1").style.display = "none";
+            }
+            else{
+                document.getElementById("hide1").style.display = "block";
+            }
+        }
+    </script>
+    <script src="js/yunyingshang-js/jquery-1.11.3.min.js"></script>
+    <script src="js/yunyingshang-js/bootstrap.min.js"></script>
+</body>
+</html>

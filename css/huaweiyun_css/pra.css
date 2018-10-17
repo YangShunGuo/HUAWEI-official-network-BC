@@ -1,0 +1,24 @@
+.nb {
+	width:1210px;
+	position: absolute;
+	top:-500px;
+	height: 500px;
+	margin:0 auto;
+	background:red;
+	display:none;
+	// transition:all 1s;
+}
+
+ul{
+	height:600px;
+	overflow:hidden;
+	width:200px;
+	overflow:hidden;
+}
+li{
+	float:left;
+	width:200px;
+	height: 500px;
+	background:red;
+	margin-left: 15px;
+}

@@ -1,0 +1,690 @@
+.section-body {
+  width: 100%;
+}
+.section-body ul li {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.section-body ul li a {
+  font-size: 18px;
+  color: #8A8D93;
+  display: inline-block;
+  cursor: pointer;
+}
+.section-body ul li a span {
+  font-size: 35px;
+}
+.section-body ul li a.active {
+  border-bottom: 4px solid red;
+}
+.section-body .content {
+  display: none;
+  height: 488px;
+  background: #f1f3ff;
+}
+.section-body .content.active {
+  display: block;
+}
+.section-body .content .container {
+  width: 1210px;
+  height: 488px;
+}
+.section-body .content .container .left {
+  height: 488px;
+  padding: 20px 0;
+}
+.section-body .content .container .left div {
+  height: 50%;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 20px;
+  transition: all 0.5s;
+}
+.section-body .content .container .left div:hover {
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0 30px 40px 0 rgba(130, 98, 98, 0.1);
+}
+.section-body .content .container .left div:hover h1 {
+  color: red;
+}
+.section-body .content .container .left div h1 {
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 22px;
+}
+.section-body .content .container .left div p {
+  font-size: 14px;
+  color: #95989D;
+}
+.section-body .content .container .left div a {
+  margin-top: 40px;
+  display: inline-block;
+  width: 116px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #F56F69;
+  border-radius: 2px;
+  color: #F56F69;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.section-body .content .container .left div a:hover {
+  background: #fa6f66;
+  color: white;
+}
+.section-body .content .container .middle {
+  padding: 20px 0;
+  height: 488px;
+}
+.section-body .content .container .middle div {
+  height: 33%;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 40px;
+  transition: all 0.5s;
+}
+.section-body .content .container .middle div:hover {
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0 30px 40px 0 rgba(130, 98, 98, 0.1);
+}
+.section-body .content .container .middle div:hover h1 {
+  color: red;
+}
+.section-body .content .container .middle div h1 {
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 22px;
+}
+.section-body .content .container .middle div p {
+  font-size: 14px;
+  color: #95989D;
+}
+.section-body .content .container .right {
+  padding: 20px 0;
+  height: 488px;
+}
+.section-body .content .container .right div {
+  height: 33%;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 40px;
+  transition: all 0.5s;
+}
+.section-body .content .container .right div:hover {
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0 30px 40px 0 rgba(130, 98, 98, 0.1);
+}
+.section-body .content .container .right div:hover h1 {
+  color: red;
+}
+.section-body .content .container .right div h1 {
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 22px;
+}
+.section-body .content .container .right div p {
+  font-size: 14px;
+  color: #95989D;
+}
+.section-foot {
+  height: 100px;
+  text-align: center;
+  font-size: 18px;
+}
+.section-foot .container {
+  height: 100px;
+}
+.section-foot .container a {
+  display: inline-block;
+  line-height: 100px;
+  color: #999999;
+  cursor: pointer;
+  text-decoration: none;
+}
+.section-foot .container a:hover {
+  color: red;
+}
+.solution {
+  height: 800px;
+  background: #2a2e47;
+}
+.solution .container .head {
+  padding: 30px 0;
+  text-align: center;
+}
+.solution .container .head h2 {
+  color: #FAFBFE;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+}
+.solution .container .head p {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+.solution .container .body {
+  height: 504px;
+}
+.solution .container .body ul li {
+  position: relative;
+  height: 72px;
+  background: rgba(255, 255, 255, 0.15);
+  margin-left: 10px;
+  padding-left: 30px;
+  width: 240px;
+  cursor: pointer;
+}
+.solution .container .body ul li.active {
+  width: 260px;
+  margin: 0;
+  padding-left: 40px;
+  background-image: -webkit-linear-gradient(#F67E78 0%, #F56F69 63%);
+  background-image: -o-linear-gradient(#F67E78 0%, #F56F69 63%);
+  background-image: linear-gradient(#F67E78 0%, #F56F69 63%);
+}
+.solution .container .body ul li h2 {
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 72px;
+  margin: 0 0;
+  padding: 0 0;
+}
+.solution .container .body .wrap {
+  display: block;
+  padding: 20px 10px 0 30px;
+  overflow: hidden;
+  width: 800px;
+  height: 491px;
+}
+.solution .container .body .wrap .souluton-centent {
+  display: none;
+  height: 471px;
+  width: 752px;
+}
+.solution .container .body .wrap .souluton-centent.active {
+  display: block;
+}
+.solution .container .body .wrap .souluton-centent .ps h2 {
+  font-size: 22px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin: 0 0 15px 0;
+}
+.solution .container .body .wrap .souluton-centent .ps p {
+  opacity: 0.8;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 22px;
+}
+.solution .container .body .wrap .souluton-centent .ps a {
+  border: 1px solid #FAFBFE;
+  border-radius: 4px;
+  height: 40px;
+  width: 140px;
+  margin: 20px 0 40px 0;
+  line-height: 40px;
+  font-size: 14px;
+  color: #FAFBFE;
+  padding-left: 30px;
+  display: inline-block;
+}
+.solution .container .body .wrap .souluton-centent .ps a:hover {
+  color: #fa6f66;
+  border: 1px solid #fa6f66;
+}
+.solution .container .body .wrap .souluton-centent .ts {
+  position: relative;
+  margin-bottom: 40px;
+}
+.solution .container .body .wrap .souluton-centent .ts a {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  height: 40px;
+  padding-left: 50px;
+  display: inline-block;
+  position: relative;
+  width: 165px;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 40px;
+  margin-right: 20px;
+}
+.solution .container .body .wrap .souluton-centent .ts a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.solution .container .body .wrap .souluton-centent .par {
+  position: relative;
+}
+.solution .container .body .wrap .souluton-centent .par img {
+  margin-left: 30px;
+}
+.solution .container .body .wrap .souluton-centent .comm h3 {
+  font-size: 18px;
+  color: #FFFFFF;
+  width: 135px;
+  margin-bottom: 20px;
+}
+.solution .container .body .wrap .souluton-centent .comm h3 span {
+  border-top: 1px solid white;
+  opacity: 0.2;
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  margin-left: 40px;
+  top: 12px;
+}
+.solution .container .foot {
+  height: 82px;
+}
+.solution .container .foot p {
+  height: 40px;
+  margin-top: 50px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+}
+.solution .container .foot p a {
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+}
+.solution .container .foot p a:hover {
+  color: red;
+}
+.service {
+  height: 640px;
+}
+.service .container {
+  height: 640px;
+}
+.service .container h2 {
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 46px;
+  color: #3B516A;
+  height: 46px;
+}
+.service .container p {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #999;
+  height: 22px;
+}
+.service .container .content {
+  margin-top: 50px;
+}
+.service .container .content div {
+  height: 340px;
+  padding-top: 81px;
+}
+.service .container .content div:hover {
+  box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
+}
+.service .container .content div:first-child {
+  padding-top: 0px;
+}
+.service .container .content div:first-child img {
+  height: 340px;
+  width: 100%;
+}
+.service .container .content div a {
+  display: block;
+  width: 126px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 90px;
+  margin-bottom: 40px;
+}
+.service .container .content div a img {
+  position: absolute;
+  left: 39px;
+  width: 48px;
+  height: 48px;
+}
+.service .container .content div a h4 {
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+  color: #34475F;
+}
+.service .container .content div p {
+  padding: 0 0;
+  margin: 0 0;
+  font-size: 14px;
+  color: #8A8D93;
+}
+.service .container .foot {
+  margin-top: 60px;
+}
+.service .container .foot p {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+}
+.service .container .foot p a {
+  font-size: 18px;
+  color: #999;
+}
+.service .container .foot p a:hover {
+  color: red;
+}
+.map {
+  height: 670px;
+  background: url('../../image/huaweiyun-image/10.jpg');
+  background-position: -170px 0;
+}
+.partner {
+  margin-top: 60px;
+  height: 630px;
+}
+.partner .container h2 {
+  height: 46px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  color: #3B516A;
+}
+.partner .container p {
+  height: 22px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #999;
+}
+.partner .container .icon ul {
+  margin-top: 80px;
+}
+.partner .container .icon ul li {
+  float: left;
+  padding: 0 20px;
+  width: 20%;
+  height: 110px;
+}
+.partner .container .foot {
+  margin-top: 20px;
+}
+.partner .container .foot p {
+  text-align: center;
+}
+.partner .container .foot p a {
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+}
+.partner .container .foot p a:hover {
+  color: red;
+}
+.news h2 {
+  height: 46px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  color: #3B516A;
+}
+.news p {
+  height: 22px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #999;
+  margin-bottom: 50px;
+}
+.news .tab_news {
+  position: relative;
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+.news .tab_news .img {
+  width: 482px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
+}
+.news .tab_news .newscontent {
+  margin-left: 400px;
+  width: calc(100% - 400px);
+  box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
+  height: 340px;
+  overflow: hidden;
+}
+.news .tab_news .newscontent .control {
+  position: absolute;
+  height: 5px;
+  bottom: 105px;
+  left: 730px;
+}
+.news .tab_news .newscontent .control a {
+  display: inline-block;
+  width: 30px;
+  height: 5px;
+  margin-right: 10px;
+  background: #eee;
+  transition: all 1s;
+  cursor: pointer;
+}
+.news .tab_news .newscontent .control a.active {
+  background: #F66E6A;
+  transform: scale(1.2);
+}
+.news .tab_news .newscontent ul {
+  position: absolute;
+  width: 3000px;
+  left: 380px;
+}
+.news .tab_news .newscontent ul li {
+  float: left;
+  width: 740px;
+  padding-top: 40px;
+  padding-left: 100px;
+  padding-right: 80px;
+  height: 340px;
+}
+.news .tab_news .newscontent ul li .tell {
+  height: 100%;
+}
+.news .tab_news .newscontent ul li .tell:hover h2 {
+  color: red;
+}
+.news .tab_news .newscontent ul li .tell h2 {
+  height: 26px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #3B516A;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+.news .tab_news .newscontent ul li .tell p {
+  height: 132px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #95989D;
+  line-height: 22px;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  text-align: left;
+}
+.news .tab_news .newscontent ul li .tell a {
+  display: inline-block;
+  width: 132px;
+  height: 40px;
+  border: 1px solid #3B516A;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #3B516A;
+  text-align: left;
+  padding-left: 30px;
+  line-height: 40px;
+  margin-bottom: 70px;
+}
+.prouct_head h2 {
+  padding-bottom: 36px;
+  font-size: 22px;
+  line-height: 30px;
+  color: #3B516A;
+  text-align: center;
+}
+.product_body {
+  margin-bottom: 50px;
+}
+.product_body .container .row div .head {
+  height: 77px;
+  background: #5A5C74;
+  border-radius: 2px 2px 0 0;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 15px;
+}
+.product_body .container .row div .head .title {
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+}
+.product_body .container .row div .head .title p {
+  display: inline-block;
+  font-weight: 700;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+}
+.product_body .container .row div .head .title p:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 21px;
+  background-color: #F66E6A;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+}
+.product_body .container .row div .head p {
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.product_body .container .row div .center {
+  border: 1px solid #eee;
+}
+.product_body .container .row div .center ul {
+  padding: 0 0;
+}
+.product_body .container .row div .center ul li {
+  padding: 15px 15px;
+  border-bottom: 1px dashed rgba(52, 71, 95, 0.3);
+}
+.product_body .container .row div .center ul li a {
+  display: inline-block;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.product_body .container .row div .center ul li span {
+  float: right;
+  font-size: 12px;
+}
+.product_body .container .row div .center ul li:hover {
+  color: red;
+}
+.product_body .container .row div .center ul li:hover a {
+  color: red;
+}
+.free {
+  height: 170px;
+  background: #f1f3ff;
+}
+.free .container {
+  width: 710px;
+  position: relative;
+}
+.free .container h2 {
+  margin-top: 50px;
+  height: 40px;
+  font-size: 28px;
+  line-height: 40px;
+  color: #34475F;
+}
+.free .container p {
+  height: 28px;
+  margin-left: 55px;
+  margin-top: 4px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #34475F;
+}
+.free .container a {
+  color: #fff;
+  background-color: #E41F2B;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 30px;
+  font-size: 18px;
+  position: absolute;
+  top: 75px;
+  right: 0px;
+}
+.last_foot {
+  background: black;
+  height: 100px;
+}
+.last_foot .container {
+  width: 1210px;
+}
+.last_foot .container ul li {
+  position: relative;
+}
+.last_foot .container ul li a {
+  display: block;
+  height: 100px;
+  cursor: pointer;
+}
+.last_foot .container ul li a .left span {
+  color: white;
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 40px;
+  background: #6F7479;
+  border-radius: 17px;
+}
+.last_foot .container ul li a .right {
+  float: right;
+  height: 100px;
+}
+.last_foot .container ul li a .right h2 {
+  font-size: 18px;
+  margin-top: 30px;
+  color: #fff;
+}
+.last_foot .container ul li a .right p {
+  font-size: 14px;
+  color: #6F7479;
+}

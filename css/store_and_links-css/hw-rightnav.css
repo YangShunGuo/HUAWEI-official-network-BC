@@ -1,0 +1,84 @@
+#bottom-nav{
+	position:fixed;
+	right:15px;
+	bottom:20px;
+	width:135px;
+	height:65px;
+}
+#bottom-nav .help-bar-nohover{
+	position:absolute;
+	right:0;
+	top:0;
+	width:40px;
+	height:65px;
+}
+#bottom-nav .help-bar-hover{
+	display:none;
+	position:absolute;
+	right:40px;
+	top:0;
+	width:95px;
+	height:65px;
+}
+#bottom-nav .b-bar{
+	width:40px;
+	height:65px;
+}
+#bottom-nav .circle{
+	width:20px;
+	height:20px;
+	padding:10px 10px;
+	border-radius:50%;
+	background-color:#7d7d7d;
+	opacity:0.8;
+}
+
+#bottom-nav .logo{
+	width:20px;
+	height:20px;
+}
+#bottom-nav .service-bar .logo{
+	width:16px;
+	margin-left:2px;
+	background:url("../../image/store_and_links-image/images/footer/icon-common.png") no-repeat -135px 0;
+}
+#bottom-nav .advice-bar .logo{ 
+	width:15px;
+	margin-left:2px;
+	background:url("../../image/store_and_links-image/images/footer/icon-common.png") no-repeat -151px 0;
+}
+#bottom-nav .help-bar-nohover .logo{ 
+	background:url("../../image/store_and_links-image/images/footer/icon-common.png") no-repeat -166px 0;
+}
+#bottom-nav .word{
+	margin-top:5px;
+	width:40px;
+	height:16px;
+}
+#bottom-nav .service-bar .word{
+	background:url("../../image/store_and_links-image/images/footer/icon-common.png") no-repeat 0 -198px;
+}
+#bottom-nav .advice-bar .word{
+	background:url("../../image/store_and_links-image/images/footer/icon-common.png") no-repeat -40px -198px;
+}
+#bottom-nav .help-bar-nohover .word{
+	display:none;
+	background:url("../../image/store_and_links-image/images/footer/icon-common.png") no-repeat -80px -198px;
+}
+#bottom-nav .help-bar-nohover:hover .circle{
+	background-color:#494949;
+}
+#bottom-nav .help-bar-nohover:hover .word{
+	display:block;	
+}
+#bottom-nav .help-bar-nohover:hover + .help-bar-hover{
+	display:block;
+} 
+#bottom-nav .help-bar-nohover:hover + .help-bar-hover .advice-bar{
+	margin-right:5px;
+	transition:margin-right 2s;
+} 
+#bottom-nav .help-bar-nohover:hover + .help-bar-hover .service-bar{
+	margin-right:5px;
+	transition:margin-right 2s;
+}

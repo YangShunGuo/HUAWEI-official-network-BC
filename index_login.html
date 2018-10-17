@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>华为 - 登录</title>
+    <link href="css/homepage_css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="image/login_and_customer/favicon.ico" type="img/x-ico" rel="icon"/>
+
+    <style>
+        *{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body{
+            line-height: 1.625;
+            font-weight: normal;
+            color: #282828;
+            font-size: 18px;
+        }
+        a,a:hover{
+            color: #282828;
+            outline: none;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 13px;
+        }
+        .container{
+            width: 100% !important;
+            max-width: 1128px;
+        }
+        #wrap_login .login_logo{
+            margin-top: 30px;
+            margin-bottom: 45px;
+            text-align: center;
+        }
+        #wrap_login .col-sm-8{
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #wrap_login .content{
+            box-shadow: 2px 0 46px rgba(0, 0, 0, 0.18);
+            border-radius: 5px;
+            padding: 36px 16.666%;
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 60px;
+        }
+        #wrap_login .main .content h1{
+            margin-top: 0;
+            line-height: 60px;
+            font-size: 48px;
+            font-weight: bold !important;
+        }
+        #wrap_login .main .content .user, .main .content .powss{
+            margin-top: 30px;
+        }
+        #wrap_login .main .content .user span, .main .content .powss span{
+            display: block;
+            margin-bottom: 5px;
+        }
+        #wrap_login .main .content input{
+            height: 50px;
+            line-height: 50px;
+            border: 1px solid #d4d4d4;
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+        #wrap_login .main .content input:focus{
+            border: 1px solid #15b0eb;
+            border-radius: 5px;
+            color: #282828;
+            box-shadow: 0 3px 8px #d4d4d4;
+        }
+        #wrap_login .main .content .forgot_password{
+            margin-top: 10px;
+            text-decoration: underline;
+            display: block;
+        }
+        #wrap_login .main .content .link-submit{
+            padding: 13px 20px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            margin-right: 20px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 100%;
+            min-width: 200px;
+            text-align: center;
+            background: #f66f6a;
+            color: #fff;
+            font-size: 18px;
+            display: inline-block;
+            text-decoration: none !important;
+            text-indent: 0 !important;
+        }
+        #wrap_login .main .content .link-submit:hover{
+            background: #a54b4a;
+        }
+        #wrap_login .main .content .create {
+            text-align: center;
+            margin-top: 10px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #d4d4d4;
+        }
+        #wrap_login .main .content .create a{
+            font-size: 18px;
+            text-decoration: underline;
+        }
+        #wrap_login .main .content .through {
+            text-align: center;
+            display: block;
+            margin-top: 30px;
+        }
+        #wrap_login .main .content .through li {
+            margin: 15px 10px;
+            display: inline-block;
+        }
+        /*#wrap_login .main .content .help{*/
+        /*font-size: 14px;*/
+        /*}*/
+        #wrap_login .main .content .help a{
+            font-size: 14px;
+            margin-left: 10px;
+            text-decoration: underline;
+        }
+        /**/
+        /*移动端*/
+        /**/
+        @media (max-width: 767px){
+            #wrap_login .login_logo{
+                margin-top: 15px;
+            }
+            #wrap_login .content {
+                padding: 36px 15px;
+            }
+            #wrap_login .main .content h1{
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <div id="wrap_login">
+      <div class="container">
+          <div class="login_logo"><img src="image/login_and_customer/login_logo.png" height="30" width="133"/></div>
+          <div class="main">
+              <div class="row">
+                  <div class="col-lg-6 col-sm-8">
+                      <div class="content">
+                          <h1>登录</h1>
+                          <form>
+                              <div class="user">
+                                  <span>账号/邮箱<em style="color:red;">*</em></span>
+                                  <input type="text" name="Username" class="form-control" placeholder="请输入帐号/邮箱">
+                              </div>
+                              <div class="powss">
+                                  <span>密码<em style="color:red;">*</em></span>
+                                  <input type="password" name="password" class="form-control" placeholder="请输入密码">
+                              </div>
+                              <a href="index_login.html" class="forgot_password">忘记密码</a>
+                              <div class="login-btn"><a href="index.html" class="link-submit">登录</a></div>
+                              <div class="create">
+                                  <a href="index_login.html">立即注册 &gt;</a>
+                              </div>
+                              <div class="through">
+                                  <span style="font-size: 18px;">通过其它方式登录:</span>
+                                  <ul>
+                                      <li><a href="index_login.html" class="share-weix"><img src="image/login_and_customer/weixin.png" height="36" width="36"/></a></li>
+                                      <li><a href="index_login.html"><img src="image/login_and_customer/linked_in.png" height="36" width="36"/></a></li>
+                                  </ul>
+                              </div>
+                              <p class="help"><img src="image/login_and_customer/wenhao.png" height="20" width="20"/><a href="index_login.html">获取更多帮助? </a></p>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/homepage-javascript/bootstrap.min.js"></script>
+</body>
+</html>

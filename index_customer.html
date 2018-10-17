@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>华为消费者业务官网 - 华为智能手机|HUAWEI P20系列</title>
+    <link href="css/homepage_css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="image/login_and_customer/favicon.ico" type="img/x-ico" rel="icon"/>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, h2, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video, p {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        a:hover{
+            text-decoration: none;
+            color: #db1530;
+        }
+        ul {
+            list-style: none;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            vertical-align: middle;
+        }
+        .conv3_nav {
+            overflow: visible;
+            min-width: 320px;
+        }
+        .conv3_nav .navcon .menu ul li a{
+            border-bottom: none;
+        }
+        .login-menu{
+            position: absolute;
+            top: 35%;
+            right: 35px;
+            width: auto;
+            margin-right: 30px;
+        }
+        .icon-yonghu:hover{
+            color: #d65a5d;
+        }
+        .login-menu-contaner{
+            display: none;
+
+        }
+        .login-menu .login-menu-list{
+            position: absolute;
+            top: 37px;
+            width: 100px;
+            transform: translateX(-50%);
+            left: 12px;
+            border: #e8e8e8 solid 1px;
+            border-radius: 6px;
+            background-color: #fff;
+            text-align: center;
+
+        }
+        .icon-yonghu:hover .login-menu-contaner{
+            display: block;
+            /*z-index: 2;*/
+        }
+        .login-menu-list a {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            line-height: 50px;
+            width: 80px;
+            font-weight: 500;
+            border-bottom: #e8e8e8 solid 1px;
+            margin: 0 auto;
+        }
+        .icon_search a:hover{
+            text-decoration: none;
+            color: #000000;
+        }
+        .icon_search{
+            position: absolute;
+            top: 35%;
+            right: 15px;
+        }
+        .iconfont{
+            font-size: 20px;
+        }
+        .banner{
+            font-family: "Akkurat Pro-Bold", Helvetica, Arial, sans-serif,"&#24494;&#36719;&#38597;&#40657;","&#23435;&#20307;","Verdana,Arial,Helvetica,sans-serif";
+            padding-top: 70px;
+        }
+        .botton-wrap a{
+            text-decoration: none;
+            display: inline-block;
+            width: 200px;
+            height: 43px;
+            margin-right: 27px;
+            border: 2px solid #000000;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 20px;
+        }
+        .botton-wrap a:hover{
+            border: 2px solid #db1530;
+            border-radius: 20px;
+        }
+
+        .banner_nova3{
+            margin-top: 12px;
+        }
+        .banner_bottom{
+            margin-top: 12px;
+        }
+        .banner_main{
+            padding: 6px 0;
+        }
+        .banner_main li{
+            width: 50%;
+            float: left;
+        }
+        .banner_main li a{
+            display: block;
+            position: relative;
+            height: 600px;
+            background: url(image/login_and_customer/Web_matebookx-original.jpg) no-repeat #f5f5f5 top center;
+            text-align: center;
+            margin: 6px 6px 6px 12px;
+        }
+        .banner_main li a:hover{
+            color: #000;
+        }
+        .banner_main .fr{
+            float: right;
+        }
+        .banner_main .fr a{
+            margin: 6px 12px 6px 6px;
+        }
+        .banner_main .part-s02 a{
+            background: url(image/login_and_customer/Web_mate10-original.jpg) no-repeat top center;
+        }
+        .banner_main .part-s03 a{
+            background: url(image/login_and_customer/Web_nova3e-original.jpg) no-repeat top center;
+        }
+        .banner_main .part-s04 a{
+            background: url(image/login_and_customer/Web_m510-original.jpg) no-repeat top center;
+        }
+        .banner_main .part-s05 a{
+            background: url(image/login_and_customer/Web_smart-original.jpg) no-repeat top center;
+        }
+        .banner_main .part-s06 a{
+            background: url(image/login_and_customer/Web_watch-original.jpg) no-repeat top center;
+        }
+        .banner_main li .main-wrap{
+            display: inline-block;
+            padding: 48px 5% 0;
+        }
+        .banner_main li .main-wrap h2{
+            /*font-family: 'akkuratpro-bold',sans serif;*/
+            font-size: 40px;
+            text-align: center;
+            line-height: 1.25;
+            color: #000;
+            font-weight: bold;
+        }
+        .banner_main li .main-wrap p {
+            font-family: "微软雅黑",serif;
+            color: #000;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 12px;
+            line-height: 1.25;
+        }
+        .banner_main .part-s05 .main-wrap h2{
+            color: #fff;
+        }
+        .banner_main .part-s05 .main-wrap p{
+            color: #fff;
+        }
+        .banner_main .part-s06 .main-wrap h2{
+            color: #fff;
+        }
+        .banner_main .part-s06 .main-wrap p{
+            color: #fff;
+        }
+        .banner_video{
+            position: relative;
+            height: 700px;
+            background: url(image/login_and_customer/video-original.jpg) no-repeat top center;
+            background-size: cover;
+            overflow: hidden;
+        }
+        .video_context {
+            position: absolute;
+            top: 50%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .banner_video h2 {
+            color: #ffffff;
+            font-size: 42px;
+            line-height: 1.25;
+            text-align: center;
+        }
+        .banner_video .botton-wrap{
+            padding: 0;
+            position: absolute;
+            top: 65%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .banner_video .botton-wrap a{
+            color: #FFF;
+            border: 2px solid #FFF;
+        }
+        .banner_video .botton-wrap a:hover{
+            color: #db1530;
+            border: 2px solid #db1530;
+            border-radius: 20px;
+        }
+        .g-foot-able .able-item-wx .qrcode{
+            display: none;
+            position: absolute;
+            left: 1px;
+            top: -120px;
+            padding: 5px;
+            border: solid 1px #999;
+            box-shadow: 0 0 4px rgba(0,0,0,.5);
+            background: #fff;
+        }
+        .g-foot-able .able-item-wx b {
+            display: block;
+            width: 108px;
+            height: 108px;
+        }
+        .g-foot-able .able-item-wx a:hover .qrcode{
+            display: block;
+        }
+        .copyright .huawei_site .qrcode{
+            display: none;
+            position: absolute;
+            left: 200px;
+            top: -122px;
+            padding: 5px;
+            border: solid 1px #999;
+            box-shadow: 0 0 4px rgba(0,0,0,.5);
+            background: #fff;
+        }
+        .copyright .huawei_site b{
+            display: block;
+            width: 108px;
+            height: 108px;
+        }
+        .copyright .huawei_site a:hover .qrcode{
+            display: block;
+        }
+        .copyright .huawei_huafen .qrcode{
+            display: none;
+            position: absolute;
+            left: 430px;
+            top: -95px;
+            padding: 5px;
+            border: solid 1px #999;
+            box-shadow: 0 0 4px rgba(0,0,0,.5);
+            background: #fff;
+        }
+        .copyright .huawei_huafen b{
+            display: block;
+            width: 80px;
+            height: 80px;
+        }
+        .copyright .huawei_huafen a:hover .qrcode{
+            display: block;
+        }
+        .row{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .g-foot-able .able-item i{
+            position: absolute;
+            left: 0;
+            height:31px;
+            width:35px;
+        }
+        .copyright .uk_icon .cn_icons > div{
+            display: inline-block;
+            margin-right: 30px;
+        }
+        .copyright .uk_icon .cn_icons > div:last-child{
+            margin-right: 0;
+        }
+
+
+
+        @media screen and (max-width: 870px) and (min-width: 768px){
+            .conv3_nav .logo {
+                width: 90px;
+                top: 22px;
+            }
+        }
+        @media screen and (min-width: 501px){
+            .newLine {
+                display: none;
+            }
+        }
+
+
+        /**/
+        /*PC端*/
+        /**/
+
+        @media screen and (min-width: 768px){
+            .conv3_nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 501;
+                width: 100%;
+                font-size: 15px;
+                background-color: #fff;
+            }
+            .group_tips{
+                height: 28px;
+                background-color: #222;
+            }
+            .group_tips .container{
+                height: 28px;
+                margin-right: auto;
+                margin-left: auto;
+                padding-left: 11px;
+                padding-right: 11px;
+                width: 100% !important;
+                max-width: 1046px;
+            }
+            .group_tips a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 12px;
+            }
+            .conv3_nav .navcon{
+                width: 88.91%;
+                max-width: 1024px;
+                height: 70px;
+                margin: 0 auto;
+                position: relative;
+            }
+            .conv3_nav .navcon .logo{
+                position: absolute;
+                top: 19px;
+                left: 0;
+                height: 25px;
+                width: 109px;
+            }
+            .conv3_nav .navcon .menu{
+                position: absolute;
+                left: 16.5%;
+                line-height: 70px;
+                letter-spacing: 2px;
+            }
+            .conv3_nav .navcon .menu ul{
+                display: block;
+                float: left;
+            }
+
+            .conv3_nav .navcon .menu ul li{
+                float: left;
+                margin-right: 16px;
+                position: relative;
+                cursor: pointer;
+            }
+            .conv3_nav .navcon .menu ul li a{
+                text-decoration: none;
+                display: block;
+                transition: all 300ms;
+                padding-bottom: 4px;
+                height: 50px;
+                border-bottom: solid 2px transparent;
+            }
+            .conv3_nav .navcon .menu ul li a:hover{
+                position: relative;
+                color: #db1530;
+                border-bottom: solid 2px #db1530;
+            }
+            .conv3_nav .navcon .menu ul li i:hover{
+                color: #db1530;
+            }
+            .banner_pad{
+                height: 700px;
+                background: url(image/login_and_customer/banner-original.jpg) no-repeat #FAFAFA top center;
+                overflow: hidden;
+            }
+            .botton-wrap{
+                padding-top: 562px;
+                margin-left: -535px;
+                text-align: center;
+            }
+            .bottom-banner {
+                height: 700px;
+                background: url(image/login_and_customer/nova3-pc.jpg) no-repeat top center;
+                background-size: cover;
+            }
+            .banner_bottom_s01{
+                height: 700px;
+                background: url(image/login_and_customer/bottom-banner-original.jpg) no-repeat top center;
+                background-size: cover;
+            }
+            .footer {
+                position: relative;
+                width: 88.91%;
+                max-width: 1024px;
+                margin: 0 auto 25px;
+                padding-top: 59px;
+                font-size: 16px;
+                clear: both;
+            }
+            .g-foot-able .able-item-server-time {
+                display: inline-block;
+                line-height: 20px;
+                position: relative;
+                top: -45px;
+                font-size: 12px;
+                left: 110px;
+            }
+            .g-foot-able .able-items {
+                position: absolute;
+                right: 0;
+                margin-top: 0;
+            }
+            .g-foot-able-sup .left-content:last-child {
+                margin-right: 0;
+            }
+
+
+            .g-foot-able{
+                height: 65px;
+                line-height: 65px;
+                padding-bottom: 5px;
+                border-bottom: 1px solid gray;
+                position: relative;
+            }
+            .g-foot-able-sup .right-content {
+                width: 38%;
+            }
+            .g-foot-able .able-item {
+                float: left;
+                position: relative;
+                z-index: 11;
+                height: 65px;
+            }
+            .g-foot-able .able-item .tit {
+                float: left;
+                font-size: 12px;
+                font-weight: 700;
+                cursor: pointer;
+                margin-right: 15px;
+            }
+            .g-foot-able .able-item-service.able-item-service .tit {
+                cursor: default;
+            }
+            .g-foot-able .able-item-service .tit {
+                padding-left: 41px;
+            }
+            .g-foot-able .able-item-service .tel {
+                word-break: break-all;
+                word-spacing: normal;
+                white-space: nowrap;
+                font-size: 12px;
+                margin-top: 0;
+            }
+            .g-foot-able .line {
+                float: left;
+                margin: 15px 2% 0 0;
+                width: 1px;
+                height: 35px;
+                overflow: hidden;
+                font-size: 0;
+                background: #2e2e2e;
+            }
+            .g-foot-able .able-item-wx .tit {
+                padding-left: 55px;
+            }
+            .g-foot-able-sup .left-content {
+                margin-right: 30px;
+            }
+            .g-foot-able .able-item-online .tit {
+                padding-left: 45px;
+            }
+            .g-foot-able .able-item-yc .tit {
+                padding-left: 43px;
+            }
+            .g-foot-able-sup .able-item-sup .tit {
+                padding-left: 44px;
+            }
+            .g-foot-able .able-item-service i{
+                position: absolute;
+                top:15px;
+                background: url(image/login_and_customer/footer_s01.png) no-repeat;
+            }
+            .g-foot-able .able-item-wx i{
+                position: absolute;
+                top:15px;
+                background: url(image/login_and_customer/footer_s02.png) no-repeat;
+            }
+            .g-foot-able .able-item-online i{
+                position: absolute;
+                top:15px;
+                background: url(image/login_and_customer/footer_s03.png) no-repeat;
+            }
+            .g-foot-able .able-item-yc i{
+                position: absolute;
+                top:15px;
+                background: url(image/login_and_customer/footer_s04.png) no-repeat;
+            }
+            .g-foot-able .able-item-sup i{
+                position: absolute;
+                top:15px;
+                background: url(image/login_and_customer/footer_s05.png) no-repeat;
+            }
+            .row span{
+                font-size: 16px;
+                font-weight: bold;
+                margin: 20px 10px 8px 0;
+            }
+            .row ul li{
+                font-size: 14px;
+                font-weight: 400;
+                padding-top: 20px;
+            }
+            .col-md-2,.col-sm-2{
+                width: 18.666667%;
+            }
+            .copyright{
+                margin-top: 20px;
+                border-top: #000 solid 1px;
+            }
+            .uk_icon{
+                height: 45px;
+                line-height: 45px;
+            }
+            .tags{
+                float: left;
+                font-size: 17px;
+            }
+            .copyright .uk_icon .tags a{
+                text-decoration: underline;
+                letter-spacing: 2px;
+            }
+            .icons {
+                float: right;
+                position: relative;
+            }
+            .cn_icons span, .cn_icons_mobile span {
+                font-size: 12px;
+            }
+            .menu_copy{
+                font-size: 12px;
+                line-height: 30px;
+                overflow: hidden;
+                width: 100%;
+            }
+            .menu_copy .menu{
+                float: left;
+            }
+            .menu_copy .menu a{
+                float: left;
+                margin-right: 10px;
+            }
+            .menu_copy .copy {
+                float: right;
+            }
+
+        }
+        /**/
+        /*移动端*/
+        /**/
+        @media screen and (max-width: 767px){
+            .conv3_nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 57px;
+                z-index: 501;
+                width: 100%;
+                font-size: 15px;
+                background-color: #fff;
+            }
+            .conv3_nav .logo {
+                display: block;
+                width: 118px;
+                margin: 15px auto 0;
+            }
+            .icon_search{
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+            .icon-sousuo{
+                font-size: 25px;
+            }
+            .banner{
+                padding-top: 15px;
+            }
+            .botton-wrap a {
+                width: 148px;
+                height: 28px;
+                line-height: 30px;
+                font-size: 12px;
+                border: 1px solid #000000;
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .botton-wrap a:hover{
+                border: 1px solid #db1530;
+                border-radius: 20px;
+            }
+            .banner_pad{
+                height: 700px;
+                background: url(image/login_and_customer/pad-banner-v3-original.jpg) no-repeat #FAFAFA top center;
+                background-size: cover;
+                overflow: hidden;
+            }
+            .botton-wrap {
+                padding-top: 530px;
+                margin-left: -360px;
+                text-align: center;
+            }
+            .bottom-banner {
+                height: 700px;
+                background: url(image/login_and_customer/nova3-pc.jpg) no-repeat top center;
+                background-size: cover;
+            }
+            .bottom-banner {
+                height: 548px;
+                background: url(image/login_and_customer/nova3-mobile.jpg) no-repeat top center;
+                background-size: cover;
+            }
+            .banner_bottom_s01{
+                height: 548px;
+                background: url(image/login_and_customer/app-bottom-original.jpg) no-repeat top center;
+                background-size: cover;
+            }
+
+            .footer{
+                position: relative;
+                padding: 40px 0 30px;
+                width: 86.87%;
+                max-width: 650px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .g-foot-able{
+                overflow: inherit;
+                height: auto;
+                line-height: 65px;
+                padding-bottom: 5px;
+                border-bottom: 1px solid gray;
+                position: relative;
+                font-size: 12px;
+            }
+            .g-foot-able .able-item {
+                float: none;
+                margin: 0 auto;
+            }
+            .tit{
+                font-weight: 700;
+                margin-right: 15px;
+                padding: 0;
+                float: none;
+                width: auto;
+                position: relative;
+                padding-left: 41px;
+            }
+            .g-foot-able .able-item p{
+                line-height: 20px;
+            }
+            .g-foot-able .able-item-service i{
+                position: absolute;
+                top:-5px;
+                background: url(image/login_and_customer/footer_s01.png) no-repeat;
+            }
+            .g-foot-able .able-item-wx i{
+                position: absolute;
+                top:-5px;
+                background: url(image/login_and_customer/footer_s02.png) no-repeat;
+            }
+            .g-foot-able .able-item-online i{
+                position: absolute;
+                top:-5px;
+                background: url(image/login_and_customer/footer_s03.png) no-repeat;
+            }
+            .g-foot-able .able-item-yc i{
+                position: absolute;
+                top:-5px;
+                background: url(image/login_and_customer/footer_s04.png) no-repeat;
+            }
+            .g-foot-able .able-item-sup i{
+                position: absolute;
+                top:-5px;
+                background: url(image/login_and_customer/footer_s05.png) no-repeat;
+            }
+            .xs{
+                margin-top: 30px;
+            }
+            .row span{
+                font-size: 14px;
+                font-weight: bold;
+
+            }
+            .row span:hover{
+                transition: all 300ms;
+                color: #db1530;
+            }
+            .copyright {
+                margin: 15px auto 0;
+                padding: 7px;
+                border-top: #000 solid 1px;
+            }
+            .copyright .tags a{
+                text-decoration: underline;
+                letter-spacing: 2px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .copyright .menu_copy .copy {
+                margin-top: 7px;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 16px;
+                text-align: center;
+            }
+
+
+        }
+
+        /**/
+        /*小尺寸*/
+        /**/
+
+        @media (max-width: 501px){
+            .banner_pad{
+                height: 700px;
+                background: url(image/login_and_customer/app-banner-v2-original.jpg) no-repeat #FAFAFA top center;
+                background-size: cover;
+            }
+            .botton-wrap {
+                padding-top: 575px;
+                margin-left: 0;
+                text-align: center;
+            }
+            .botton-wrap a {
+                width: 120px;
+                border: 1px solid #000000;
+                height: 30px;
+                margin-right: 5px;
+            }
+            .botton-wrap a:hover{
+                border: 1px solid #db1530;
+                border-radius: 20px;
+            }
+        }
+
+        @media screen and (max-width: 1000px){
+            .conv3_nav .navcon .menu_cn ul li a {
+                font-size: 12px;
+            }
+        }
+        @media screen and (max-width: 1200px){
+            .conv3_nav .navcon .menu_cn ul li a {
+                font-size: 13px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+  <!--导航-->
+  <div id="normal_nav" class="conv3_nav">
+      <div class="group_tips hidden-sm hidden-xs">
+          <div class="container">
+             <span style="height: 28px;line-height: 28px;">
+                <a href="#">消费者业务网站 ∨</a>
+             </span>
+          </div>
+      </div>
+      <div class="navcon">
+          <div class="logo_wrap">
+              <a href="#"><img class="logo" src="image/login_and_customer/huawei_logo.png"/></a>
+          </div>
+          <div class="menu menu_cn hidden-sm hidden-xs" style="display: block;">
+              <ul>
+                  <li class="menu_wrap"><a class="a-common" href="#" >智能手机</a></li>
+                  <li class="menu_wrap"><a class="a-common" href="#">笔记本&amp;平板</a></li>
+                  <li class="menu_wrap"><a class="a-common" href="#">穿戴设备</a></li>
+                  <li class="menu_wrap"><a class="a-common" href="#">智能家居</a></li>
+                  <li class="menu_wrap"><a class="a-common" href="#">更多产品</a></li>
+                  <li class="menu_wrap"><a class="a-common" href="#">软件应用</a></li>
+                  <li><a class="a-common" href="#">服务与支持</a></li>
+                  <li><a class="a-common" href="huawei.html" target="_blank">华为商城</a></li>
+              </ul>
+          </div>
+          <div  class="login-menu hidden-sm hidden-xs dropdown">
+              <span class="iconfont icon-yonghu" style="font-weight: bold;">
+                  <div class="login-menu-contaner">
+                      <a href="#" class="iconfont icon-shang" style="color:#e8e8e8;font-weight:lighter;"></a>
+                      <div class="login-menu-list">
+                          <ul>
+                              <li><a href="index_login.html" class="login-btn" style="font-size: 14px;">登 录</a></li>
+                              <li><a href="#" class="reg-btn" style="font-size: 14px;">注 册</a></li>
+                          </ul>
+                      </div>
+                  </div>
+
+              </span>
+          </div>
+          <div class="icon_search">
+              <a href="#" class="iconfont icon-sousuo" style="font-weight: bold;"></a>
+          </div>
+      </div>
+  </div>
+  <!--大图和小图-->
+  <div class="banner">
+      <div class="banner_pad" title="HUAWEI P20 Pro">
+          <div class="botton-wrap">
+              <a href="#">HUAWEI P20</a>
+              <a href="#">HUAWEI P20 Pro</a>
+          </div>
+      </div>
+      <div class="banner_nova3" title="HUAWEI nova 3">
+          <a href="#"><div class="bottom-banner"></div></a>
+      </div>
+      <div class="banner_bottom" title="PORSCHE DESIGN HUAWEI Mate RS">
+          <a href="#"><div class="banner_bottom_s01"></div></a>
+      </div>
+      <div class="banner_main">
+          <ul>
+              <li class="part-s01">
+                  <a class="a-homecat" href="#" title="HUAWEI MateBook X Pro">
+                      <div class="main-wrap">
+                          <h2>HUAWEI <br class="newLine"> MateBook X Pro</h2>
+                          <p>开启大视野</p>
+                      </div>
+                  </a>
+              </li>
+              <li class="fr part-s02">
+                  <a class="a-homecat" title="HUAWEI Mate10 Pro" href="#">
+                      <div class="main-wrap">
+                          <h2>HUAWEI Mate10 Pro</h2>
+                          <p>预见未来</p>
+                      </div>
+                  </a>
+              </li>
+              <li class="part-s03">
+                  <a class="a-homecat" title="HUAWEI nova 3e" href="#">
+                    <div class="main-wrap">
+                          <h2>HUAWEI nova 3e</h2>
+                          <p>高颜值 爱自拍</p>
+                      </div>
+                  </a>
+              </li>
+              <li class="fr part-s04">
+                  <a class="a-homecat" title="HUAWEI MediaPad M5 10.8" href="#">
+                      <div class="main-wrap">
+                          <h2>华为平板 M5 10.8英寸</h2>
+                          <p>2K高清屏 哈曼卡顿调音</p>
+                      </div>
+                  </a>
+              </li>
+              <li class="part-s05">
+                  <a class="a-homecat" title="Smart Space" href="#">
+                      <div class="main-wrap">
+                          <h2>智能生活馆</h2>
+                          <p>传递更多想象</p>
+                      </div>
+                  </a>
+              </li>
+              <li class="fr part-s06">
+                  <a class="a-homecat" title="HUAWEI WATCH 2 Pro" href="#">
+                      <div class="main-wrap">
+                          <h2>HUAWEI WATCH 2 Pro</h2>
+                          <p>这一刻更自由</p>
+                      </div>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div style="clear: both; height: 5px;"></div>
+      <div class="banner_video p20-section-video" title="Learn More">
+          <div class="container">
+              <div class="main-wrap video_context">
+                  <h2>2018华为年度旗舰产品视频合辑</h2>
+              </div>
+              <div class="botton-wrap">
+                  <a class="a-homecat ece" href="#">了解更多</a>
+              </div>
+          </div>
+      </div>
+
+  </div>
+  <!--网站底部-->
+  <div class="footer">
+      <div class="g-foot-able g-foot-able-sup">
+          <div class="able-item right-content able-item-service">
+              <span class="tit">服务热线<i></i></span>
+              <p class="tel">400-830-8300 / 800-830-8300（座机）</p>
+              <p class="able-item-server-time">普通话 7*24小时</p>
+          </div>
+          <div class="line"></div>
+          <ul class="able-items">
+              <li class="able-item left-content a-common able-item-wx">
+                  <a class="tit" href="#">
+                      微信客服
+                       <i></i>
+                      <span class="qrcode"><b><img src="image/login_and_customer/able-item-wx-01.png" height="108" width="108"/></b></span>
+                  </a>
+              </li>
+              <li class="able-item left-content a-common able-item-online">
+                  <a class="tit"  href="#">
+                      在线客服
+                      <i></i>
+                      <span class="qrcode"><b></b></span>
+                  </a>
+              </li>
+              <li class="able-item left-content a-common able-item-yc">
+                  <a class="tit" href="#">
+                      零售店查询
+                      <i></i>
+                  </a>
+              </li>
+              <li class="able-item left-content a-common able-item-sup">
+                  <a class="tit" href="#">
+                      服务中心查询
+                      <i></i>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="row">
+          <div class="col-md-2 col-sm-2 xs">
+              <span>购买产品</span>
+              <ul class="hidden-xs">
+                  <li><a href="#">智能手机</a></li>
+                  <li><a href="#">笔记本&平板</a></li>
+                  <li><a href="#">智能穿戴</a></li>
+                  <li><a href="#">智能家居</a></li>
+                  <li><a href="#">移动宽带</a></li>
+                  <li><a href="#">配件</a></li>
+              </ul>
+          </div>
+          <div class="col-md-2 col-sm-2 xs">
+              <span>服务与支持</span>
+              <ul class="hidden-xs">
+                  <li><a href="#">调查问卷</a></li>
+                  <li><a href="#">保修政策</a></li>
+                  <li><a href="#">预约服务</a></li>
+                  <li><a href="#">寄修服务</a></li>
+                  <li><a href="#">保修状态查询</a></li>
+                  <li><a href="#">维修备件价格</a></li>
+                  <li><a href="#">维修进度查询</a></li>
+                  <li><a href="#">联系我们</a></li>
+              </ul>
+          </div>
+          <div class="col-md-2 col-sm-2 xs">
+              <span>应用与下载</span>
+              <ul class="hidden-xs">
+                  <li><a href="#">预置应用公示</a></li>
+                  <li><a href="#">店面元素下载</a></li>
+              </ul>
+          </div>
+          <div class="col-md-2 col-sm-2 xs">
+              <span>新闻中心</span>
+              <ul class="hidden-xs">
+                  <li><a href="#">华为新闻</a></li>
+                  <li><a href="#">华为视频</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 xs">
+              <span>关于我们</span>
+              <ul class="hidden-xs">
+                  <li><a href="#">关于我们</a></li>
+                  <li><a href="#">华为商城</a></li>
+                  <li><a href="#">企业业务</a></li>
+                  <li><a href="#">运营商网络</a></li>
+                  <li><a href="#">华为海洋</a></li>
+                  <li><a href="#">华为集团</a></li>
+                  <li><a href="#">加入华为</a></li>
+                  <li><a href="#">成为合作伙伴</a></li>
+              </ul>
+          </div>
+      </div>
+      <div style="height: 20px;"></div>
+      <div class="copyright">
+          <div class="uk_icon">
+              <div class="tags">
+                  <a href="#">CN</a>
+              </div>
+              <div class="icons cn_icons hidden-xs">
+                  <div>
+                      <span>
+                          访问花粉俱乐部
+                      </span>
+                      <a href="#" target="_blank"><img style="height:25px;width:30px;margin-left:10px;" src="image/login_and_customer/icons_s01.png"/></a>
+
+                  </div>
+                  <div class="huawei_site">
+                      <span>关注我们</span>
+                      <a href="#" >
+                          <img src="image/login_and_customer/icons_s02.png" style="height:25px;width:30px;margin-left:10px;"/>
+                          <span class="qrcode"><b><img src="image/login_and_customer/able-item-wx-02.png" height="108" width="108"/></b></span>
+                      </a>
+                      <a href="#"><img src="image/login_and_customer/icons_s03.png" style="height:25px;width:30px;margin-left:10px;"/></a>
+                  </div>
+                  <div class="huawei_huafen">
+                      <span>关注花粉俱乐部</span>
+                      <a href="#" >
+                          <img src="image/login_and_customer/icons_s02.png" style="height:25px;width:30px;margin-left:10px;"/>
+                          <span class="qrcode"><b><img src="image/login_and_customer/able-item-wx-03.png" height="80" width="80"/></b></span>
+                      </a>
+                      <a href="#"><img src="image/login_and_customer/icons_s03.png" style="height:25px;width:30px;margin-left:10px;"/></a>
+                  </div>
+              </div>
+          </div>
+          <div class="menu_copy">
+              <div class="menu hidden-xs">
+                  <a href="#"" class="a-common">网站地图</a>
+                  <a href="#" class="a-common">使用条款</a>
+                  <a href="#" class="a-common">隐私</a>
+                  <a href="#" class="a-common">关于cookies</a>
+                  <a href="#" class="a-common">法律信息</a>
+              </div>
+              <div class="copy">
+                  版权所有 © 华为技术有限公司 1998-2017。保留一切权利。 粤
+                  <a href="#">A2-20044005</a>
+                  号
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/homepage-javascript/bootstrap.min.js"></script>
+
+</body>
+</html>
